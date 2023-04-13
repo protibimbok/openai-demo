@@ -1,0 +1,1 @@
+export const pageTitle = (title: string) => `${title} | The OpenAPI Demo`
