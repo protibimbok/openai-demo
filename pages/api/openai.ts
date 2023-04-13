@@ -1,10 +1,5 @@
+import { openai } from '@/helpers/openai';
 import { NextApiRequest, NextApiResponse } from 'next'
-import { Configuration, OpenAIApi } from 'openai'
-const configuration = new Configuration({
-    organization: process.env.OPENAI_ORG_ID,
-    apiKey: process.env.OPENAI_API_KEY,
-})
-const openai = new OpenAIApi(configuration)
 
 export default function handler(
     req: NextApiRequest,
