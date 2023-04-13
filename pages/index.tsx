@@ -68,7 +68,7 @@ export default function Home() {
         } catch (error: any) {
             let err = error.message
             if (error.response) {
-                err = error.response.data?.message || err
+                err = error.response.data?.data?.error?.message || error.response.data?.message || err
             }
 
             setMsgs(addNewMsg({
